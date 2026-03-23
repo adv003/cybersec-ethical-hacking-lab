@@ -41,4 +41,3 @@ netstat -tuln           # show listening ports
 ss -tuln                # modern netstat equivalent
 traceroute google.com   # trace route to host
 ```
-```
