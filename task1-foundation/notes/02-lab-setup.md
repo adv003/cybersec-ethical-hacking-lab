@@ -1,13 +1,12 @@
 # Lab Environment Setup
 
 ## Topology
-```
-```
+
 Host Machine (Windows/Linux)
 └── VMware Workstation
-    ├── Kali Linux 2024.x (Attacker) — 192.168.x.x
-    ├── Metasploitable2 (Target 1)   — 192.168.x.x
-    └── DVWA on Ubuntu (Target 2)    — 192.168.x.x
+    ├── Kali Linux 2024.x (Attacker) — 192.168.189.131
+    ├── Metasploitable2 (Target 1)   — 192.168.189.132
+    └── DVWA on Ubuntu (Target 2)    — 192.168.189.132
 
 Network: Host-Only Adapter (isolated — no internet access)
 ## Setup Steps
