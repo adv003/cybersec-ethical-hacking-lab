@@ -32,3 +32,8 @@
 ## NAT (Network Address Translation)
 Translates private IPs (192.168.x.x, 10.x.x.x) to a single public IP.
 Types: Static NAT, Dynamic NAT, PAT (Port Address Translation)
+
+## Lab Note
+Reverse DNS lookup (nslookup 192.168.189.132) returns NXDOMAIN
+as expected — no PTR records configured in an isolated lab 
+environment with no local DNS server.
