@@ -37,3 +37,10 @@ Types: Static NAT, Dynamic NAT, PAT (Port Address Translation)
 Reverse DNS lookup (nslookup 192.168.189.132) returns NXDOMAIN
 as expected — no PTR records configured in an isolated lab 
 environment with no local DNS server.
+
+## ARP Table (Lab Environment)
+```bash
+arp -a
+# 192.168.189.2   → VMware host-only gateway
+# 192.168.189.132 → Metasploitable2 (00:0c:29:64:c6:81)
+```
