@@ -45,3 +45,7 @@ The -pbkdf2 flag uses Password-Based Key Derivation Function 2 to
 derive the encryption key from the password. Without it, OpenSSL 
 uses a weaker legacy method and throws a deprecation warning.
 Always use -pbkdf2 with modern OpenSSL versions.
+
+`rsautl` was deprecated in OpenSSL 3.0. Use `pkeyutl` instead 
+for RSA encryption/decryption operations. The flags remain 
+the same — only the command name changes.
