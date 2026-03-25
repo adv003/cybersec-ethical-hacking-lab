@@ -40,3 +40,8 @@ openssl dgst -sha256 plaintext.txt
 openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
   -keyout selfsigned.key -out selfsigned.crt
 ```
+## OpenSSL Note
+The -pbkdf2 flag uses Password-Based Key Derivation Function 2 to 
+derive the encryption key from the password. Without it, OpenSSL 
+uses a weaker legacy method and throws a deprecation warning.
+Always use -pbkdf2 with modern OpenSSL versions.
